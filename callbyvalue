@@ -15,3 +15,32 @@ public class functioncall{
 	System.out.println(a);
 	}
 }
+
+
+
+class book{
+	String Title;
+	String Author;
+	double price;
+	void displayBookDetails(Book book){
+		System.out.println("Title :" + book.Title);
+		System.out.println("Author :" + book.Author);
+		System.out.println("price : $ " + price);
+		
+	
+	}
+	public book(String Title,String Author,double price){
+		this.Title = Title;
+		this.Author = Author;
+		this.price = price;
+	}
+}
+	
+public class bookclass{
+	public static void main(Sting[] args){
+		book b=new book(" Effective java "," joshan Block ",25.00);
+		book.displayBookDetails(book);
+		
+	}
+		
+}
