@@ -1,0 +1,17 @@
+class CallByValue{
+	void setdata(int a,int b) {
+		x=a;
+		y=b;
+		a=50;
+		b=40;		
+	}
+}
+public class functioncall{
+	public static void main(String[ ] args){
+	int a=30,b=20;
+	CallByValue c=new CallByValue( );
+	c.setdata(a,b);
+	System.out.println(a);
+	System.out.println(a);
+	}
+}
