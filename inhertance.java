@@ -53,4 +53,32 @@ public class Inheritance2{
 	}
 }		
 				
+
+
+
+3.
+	class animal{
+	void makessound(){
+		System.out.println("sound");
+	}
+}
+class dog extends animal{
+	void makessound(){
+		System.out.println("woof");
+	}
+}
+class puppy extends animal{
+	void makessound(){
+		System.out.println("yap");
+	}
+}
+public class Inheritance3{
+	public static void main(String[] args){
+		animal a=new animal();
+		dog d=new dog();
+		puppy p=new puppy();
+		d.makessound();
+		p.makessound();
 		
+	}
+}								
