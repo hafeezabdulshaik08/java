@@ -1,4 +1,5 @@
-1.class vehicle{
+//1.SINGLR INHERRITANCE
+class vehicle{
 	void start(){
 		System.out.println("Vehicle started");
 	}
@@ -19,7 +20,8 @@ public class Inheritance1{
 
 
 
-2.class person{
+//2.SINGLR INHERRITANCE
+class person{
 	String name;
 	int age;
 		
@@ -56,8 +58,8 @@ public class Inheritance2{
 
 
 
-3.
-	class animal{
+//3.MULTILEVEL INHERITANCE
+class animal{
 	void makessound(){
 		System.out.println("sound");
 	}
@@ -82,3 +84,45 @@ public class Inheritance3{
 		
 	}
 }								
+
+
+//4.HIERARCHICAL INHERITANCE
+import java.io.*;
+abstract class shape{
+	double getArea(){
+	return 0;
+	}
+}
+class rectangle extends shape{
+	double width;
+	double length;
+	rectangle(double w,double l){
+		width=w;
+		length=l;
+	}
+	double getArea(){
+		return length*width;
+	}
+}
+class circle extends shape{
+	double radius;
+	circle(double r){
+		radius=r;
+	}
+	double getArea(){
+		return 3.14*radius*radius;
+	}
+}
+public class a{
+	public static void main(String[] args){
+		double a,b;
+		rectangle r=new rectangle(20,10);
+		circle c=new circle(7);
+		a=r.getArea();
+		b=c.getArea();
+		System.out.println("the area of rectangle is"+a);
+		System.out.println("the area of circle is"+b);
+	}
+}	
+
+		
